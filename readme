@@ -1,1 +1,35 @@
-springboot+druid
+springboot+druid datasource
+
+一.运行应用必备条件:
+1开发工具eclipse/STS
+2安装maven
+3安装git
+4安装mysql数据库
+
+二.SQL script:
+-- Table structure for `customer_profile_info`
+-- ----------------------------
+DROP TABLE IF EXISTS `customer_profile_info`;
+CREATE TABLE `customer_profile_info` (
+  `status` varchar(1) NOT NULL,
+  `password` varchar(15) NOT NULL,
+  `user_name` varchar(20) NOT NULL,
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of customer_profile_info
+-- ----------------------------
+INSERT INTO `customer_profile_info` VALUES ('1', 'testing1234', 'admin', '1');
+
+三.github url:
+https://github.com/yiduhuangyan/springboot-druid.git
+
+四.启动后访问的地址
+http://localhost:8080/test/profileinfo
+http://localhost:8080/druid/index.html
+
+
+
+
